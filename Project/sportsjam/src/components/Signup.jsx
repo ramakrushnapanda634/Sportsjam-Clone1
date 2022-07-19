@@ -11,19 +11,19 @@ const [formData, setFormData] = React.useState({
   });
 const handleChange = (e) => {
   const type = e.target.name;
-  if (type == "name") {
+  if (type === "name") {
     const inputName = e.target.value;
     setname(e.target.value);
     setFormData({ ...formData, [inputName]: e.target.value });
-  } else if (type == "number") {
+  } else if (type === "number") {
     const inputName = e.target.value;
     setmobile(e.target.value);
     setFormData({ ...formData, [inputName]: e.target.value });
-  } else if (type == "email") {
+  } else if (type === "email") {
     const inputName = e.target.value;
     setemail(e.target.value);
     setFormData({ ...formData, [inputName]: e.target.value });
-  } else if (type == "password") {
+  } else if (type === "password") {
     const inputName = e.target.value;
     setpassword(e.target.value);
     setFormData({ ...formData, [inputName]: e.target.value });
